@@ -2,29 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Formulario</title>
 </head>
 <body>
-<h1>Este es un formulario</h1>
-<form action="../index.html" method="post" onclick="" onsubmit="">
-    <label for="user">Usuario:</label>
-    <input type="text" id="user" placeholder="usuario" required><br>
-    <label for="email">e-mail:</label>
-    <input type="email" id="email" placeholder="e-mail"><br>
-    <label for="pass">Contraseña:</label>
-    <input type="password" id="pass" placeholder="Contraseña"><br>
-    <label for="carro">Carro:</label>
-    <select name="cars" id="carro" required>
-        <option value="">selecciona un carro...</option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-    </select><br><br>
+<div class="container">
+    <h1>Este es un formulario</h1>
+    <form action="../index.html" method="post" onclick="" onsubmit="">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="user">Usuario:</label>
+                <input type="text" class="form-control" id="user" placeholder="usuario" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">e-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="e-mail">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="pass">Contraseña:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="carro">Carro:</label>
+                <select class="form-control" name="cars" id="carro" required>
+                    <option value="">selecciona un carro...</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select><br>
+            </div>
+        </div>
 
-    <input type="submit" value="Guardar">
-    <input type="reset" value="Borrar">
-</form>
-
+        <input type="submit" class="btn btn-primary" value="Guardar">
+        <input type="reset" class="btn btn-secondary" value="Borrar">
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="../assets/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
