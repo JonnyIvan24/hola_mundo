@@ -9,11 +9,11 @@
 <body>
 <div class="container">
     <h1>Este es un formulario</h1>
-    <form action="../index.html" method="post" onclick="" onsubmit="">
+    <form action="datos_del_formulario.html" method="post" onsubmit="return validacion();">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="user">Usuario:</label>
-                <input type="text" class="form-control" id="user" placeholder="usuario" required>
+                <input type="text" class="form-control" id="user" placeholder="usuario">
             </div>
             <div class="form-group col-md-6">
                 <label for="email">e-mail:</label>
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="carro">Carro:</label>
-                <select class="form-control" name="cars" id="carro" required>
+                <select class="form-control" name="cars" id="carro">
                     <option value="">selecciona un carro...</option>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -39,6 +39,7 @@
         <input type="reset" class="btn btn-secondary" value="Borrar">
     </form>
 </div>
+<script src="../assets/js/validacion.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="../assets/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
