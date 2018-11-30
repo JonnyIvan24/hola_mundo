@@ -7,8 +7,8 @@ function validacion() {
     if( user == null || user.length == 0 || /^\s+$/.test(user) ) {  //isNaN(user) que sea solo numeros
         alert('[ERROR] El campo user debe tener un valor de...');
         return false;
-    }else if ( email == null || email.length == 0 || /^\s+$/.test(email) ) {  //isNaN(user) que sea solo numeros
-        alert('[ERROR] El campo em debe tener un valor de...');
+    }else if ( email == null || email.length == 0 || /^\s+$/.test(email) ) {
+        alert('[ERROR] El campo email debe tener un valor de...');
         return false;
     }
 
